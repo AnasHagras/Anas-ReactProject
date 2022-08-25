@@ -1,21 +1,13 @@
 import React from "react";
 import Swiper from "./Swiper";
 
-const Section = () => {
+const Section = (props) => {
   return (
     <div className="section">
-      <h2 className="section-title">
-        Expand your career opportunities with Python
-      </h2>
-      <p className="section-desc">
-        Take one of Udemy’s range of Python courses and learn how to code using
-        this incredibly useful language. Its simple syntax and readability makes
-        Python perfect for Flask, Django, data science, and machine learning.
-        You’ll learn how to build everything from games to sites to apps. Choose
-        from a range of courses that will appeal to...
-      </p>
+      <h2 className="section-title">{props.title}</h2>
+      <p className="section-desc">{props.desc}</p>
       <button className="explore-button">Explore Python</button>
-      <Swiper></Swiper>
+      <Swiper courses={props.courses}></Swiper>
     </div>
   );
 };
