@@ -116,8 +116,8 @@ const CourseContainer = () => {
   ];
   return (
     <div className="course-container swiper-wrapper">
-      {courses.map((obj) => {
-        return <Course course={obj} key={obj.id} />;
+      {courses.map((course) => {
+        return <Course course={course} key={course.id} />;
       })}
     </div>
   );

@@ -1,4 +1,3 @@
-import "./App.css";
 import "./components/courses.css";
 import Section from "./components/Section";
 
